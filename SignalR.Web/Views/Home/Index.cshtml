@@ -2,7 +2,40 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section Scripts {
+    <script src="~/js/signalr-client.js"></script>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div id="connectionId" class="alert alert-primary" role="alert"></div>
+            <button type="button" class="btn btn-success disabled mx-1 my-1">
+                Connected Client Count <span id="span-connected-client-count" class="badge text-bg-secondary">4</span>
+            </button>
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-message-all-client">Send to all clients</button>
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-user-all-client">Send user to all clients</button>
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-message-caller-client">Send to requesting client</button>
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-message-others-client">Send to other clients</button>
+
+            <div>
+                <hr/>
+                <input type="text" class="form-control  mx-1 my-1" id="txt-connection-id" placeholder="connectionId">
+                <button class="btn btn-primary mx-1 my-1" id="btn-send-message-individual-client">Send to specific client</button>
+            </div>
+            
+            <div>
+                <hr/>
+                <div id = "group-list" class="alert alert-warning" role = "alert"></div>
+                
+                <button class="btn btn-primary mx-1 my-1" id="btn-join-group-a">Join Group-A</button>
+                <button class="btn btn-primary mx-1 my-1" id="btn-leave-group-a">Leave Group-A</button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-join-group-b">Join Group-B</button>
+                <button class="btn btn-primary mx-1 my-1" id="btn-leave-group-b">Leave Group-B</button>
+
+            </div>
+            
+        </div>
+    </div>
 </div>
