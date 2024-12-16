@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Web", "SignalR.Web\SignalR.Web.csproj", "{B1742A93-9875-4EB6-9A76-9083897EBB34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.ClientApp", "SignalR.ClientApp\SignalR.ClientApp.csproj", "{368C3882-1F51-4C2C-9A90-A29003894E54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B1742A93-9875-4EB6-9A76-9083897EBB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1742A93-9875-4EB6-9A76-9083897EBB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1742A93-9875-4EB6-9A76-9083897EBB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{368C3882-1F51-4C2C-9A90-A29003894E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368C3882-1F51-4C2C-9A90-A29003894E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368C3882-1F51-4C2C-9A90-A29003894E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368C3882-1F51-4C2C-9A90-A29003894E54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
